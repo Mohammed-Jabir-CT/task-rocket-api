@@ -17,12 +17,7 @@
 
 2. **Copy Environment File From '.env.example' to '.env'**
 
-3. **Generate App Encryption Key** 
-   ```bash
-   php artisan key:generate
-   ```
-   
-4. **Configure Database in `.env`**  
+3. **Configure Database in `.env`**  
    Open the `.env` file and update the following lines with your database credentials:
    ```env
    DB_DATABASE=your_database_name
@@ -30,11 +25,16 @@
    DB_PASSWORD=your_database_password
    ```
 
-5. **Install Dependencies**  
+4. **Install Dependencies**  
    ```bash
    composer install
    ```
 
+5. **Generate App Encryption Key** 
+   ```bash
+   php artisan key:generate
+   ```
+   
 6. **Run Migrations**  
    ```bash
    php artisan migrate
