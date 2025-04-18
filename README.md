@@ -15,12 +15,14 @@
    cd <project-folder>
    ```
 
-2. **Copy Environment File**  
-   ```bash
-   cp .env.example .env
-   ```
+2. **Copy Environment File From '.env.example' to '.env'**
 
-3. **Configure Database in `.env`**  
+3. **Generate App Encryption Key** 
+   ```bash
+   php artisan key:generate
+   ```
+   
+4. **Configure Database in `.env`**  
    Open the `.env` file and update the following lines with your database credentials:
    ```env
    DB_DATABASE=your_database_name
@@ -28,23 +30,23 @@
    DB_PASSWORD=your_database_password
    ```
 
-4. **Install Dependencies**  
+5. **Install Dependencies**  
    ```bash
    composer install
    ```
 
-5. **Run Migrations**  
+6. **Run Migrations**  
    ```bash
    php artisan migrate
    ```
 
-6. **Seed the Database**  
+7. **Seed the Database**  
    This will create a default user and associated tasks.
    ```bash
    php artisan db:seed
    ```
 
-7. **Start the Development Server**  
+8. **Start the Development Server**  
    ```bash
    php artisan serve
    ```
