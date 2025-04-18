@@ -52,7 +52,5 @@
    ```
    The application will be available at: [http://localhost:8000](http://localhost:8000)
 
-## Default Login Credentials
-
-- **Email:** test@example.com  
-- **Password:** password
+9. **Setup Frontend**
+  Configure frontend: [https://github.com/Mohammed-Jabir-CT/task-rocket-view](https://github.com/Mohammed-Jabir-CT/task-rocket-view)
